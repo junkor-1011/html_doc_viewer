@@ -4,6 +4,8 @@ services:
     build: ./web
     container_name: httpd
     volumes:
-      - ../doc:/usr/local/apache2/htdocs
+      - ./web/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./web/htaccess:/usr/local/apache2/htdocs/.htaccess
+      - ../doc:/usr/local/apache2/htdocs/doc
     ports:
       - "5443:443"
