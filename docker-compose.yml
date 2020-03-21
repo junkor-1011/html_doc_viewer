@@ -1,0 +1,9 @@
+version: '3'
+services:
+  httpd:
+    build: ./web
+    container_name: httpd
+    volumes:
+      - ./doc:/usr/local/apache2/htdocs
+    ports:
+      - "5443:443"
