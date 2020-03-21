@@ -1,0 +1,8 @@
+version: '3'
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - "5080:80"
+    volumes:
+      - ../doc:/usr/share/nginx/html

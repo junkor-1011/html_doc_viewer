@@ -4,6 +4,6 @@ services:
     build: ./web
     container_name: httpd
     volumes:
-      - ./doc:/usr/local/apache2/htdocs
+      - ../doc:/usr/local/apache2/htdocs
     ports:
       - "5443:443"
