@@ -6,6 +6,7 @@ services:
     volumes:
       - ./web/httpd.conf:/usr/local/apache2/conf/httpd.conf
       #- ./web/htaccess:/usr/local/apache2/htdocs/.htaccess
+      - ../html_base:/usr/local/apache2/htdocs
       - ../doc:/usr/local/apache2/htdocs/doc
     ports:
       - "5443:443"
