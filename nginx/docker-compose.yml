@@ -4,5 +4,7 @@ services:
     build: ./nginx
     ports:
       - "5080:80"
+      - "5444:443"
     volumes:
+            #      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
       - ../doc:/usr/share/nginx/html
