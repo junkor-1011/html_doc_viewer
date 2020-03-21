@@ -16,4 +16,5 @@ Note
 - https://qiita.com/asylum/items/05d8dc4cc4671d7a5d4f
 - https://gakumon.tech/nginx/nginx_conf_overview.html
 - https://qiita.com/morrr/items/7c97f0d2e46f7a8ec967
+- https://qiita.com/onokatio/items/4669b37644fe07d3aa80
 
