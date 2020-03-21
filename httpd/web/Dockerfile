@@ -2,7 +2,8 @@ FROM httpd:2.4
 
 COPY ./ssl/server.key /usr/local/apache2/conf/
 COPY ./ssl/server.crt /usr/local/apache2/conf/
-COPY ./htpasswd /usr/local/apache2/conf/.htpasswd
+#COPY ./htpasswd /usr/local/apache2/conf/.htpasswd
+COPY ./htdigest /usr/local/apache2/conf/.htdigest
 
 #RUN sed -i \
 #        -e 's/^#\(Include .*httpd-ssl.conf\)/\1/' \
