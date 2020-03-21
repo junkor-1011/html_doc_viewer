@@ -10,4 +10,7 @@ services:
       - ../doc:/usr/local/apache2/htdocs/doc
       - ../test_sphinx:/usr/local/apache2/htdocs/doc/test_sphinx
     ports:
-      - "5443:443"
+      - "${PORT}:443"
+#      - "5443-5445:443"
+    env_file:
+      - ./.env
