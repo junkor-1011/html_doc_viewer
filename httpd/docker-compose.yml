@@ -2,7 +2,7 @@ version: '3'
 services:
   httpd:
     build: ./web
-    container_name: httpd
+    container_name: ${httpd_container_name}
     volumes:
       - ./web/httpd.conf:/usr/local/apache2/conf/httpd.conf
       #- ./web/htaccess:/usr/local/apache2/htdocs/.htaccess
